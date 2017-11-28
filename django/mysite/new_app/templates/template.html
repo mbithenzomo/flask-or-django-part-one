@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Displaying a Template</h1>
+<p>Using Django Templates</p>
+
+<h2> Statements </h2>
+{% if my_variable %}
+  <p>
+    This paragraph won't be displayed in the template because the variable
+    "my_variable" does not exist. The if statement therefore returns False.
+  </p>
+{% else %}
+  <p>
+    This paragraph will be displayed.
+  </p>
+{% endif %}
+
+<h2> Variables </h2>
+
+<p>{{ my_variable }}</p>
+<p>
+  The variable above will not be displayed because it doesn't exist!
+</p>
+
+<h2> Comments </h2>
+
+{% if True %}
+  <p>
+    This will be displayed because the if statement returns True.
+  </p>
+{% endif %}
+
+{% comment %}
+  {% if True %}
+    <p>
+      This will not be displayed because it is commented out using Django
+      multi-line comments.
+    </p>
+  {% endif %}
+{% endcomment %}
+
+{# <p> This is a single-line Django comment. It won't be displayed. </p> #}
+
+
+</body>
+</html>
