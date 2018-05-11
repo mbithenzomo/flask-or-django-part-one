@@ -16,7 +16,7 @@ This series will offer an in-depth comparison of Flask and Django, looking at va
 To see the demos for both Flask and Django on your machine, begin by cloning this repo:
 
 ```
-git clone https://github.com/andela-mnzomo/flask-bucketlist-api
+git clone https://github.com/mbithenzomo/flask-or-django-part-one
 ```
 
 ## Flask
